@@ -30,7 +30,7 @@ func main() {
 	if error1 == nil && error2 == nil {
 
 		if num1 > 10 || num1 < 1 || num2 > 10 || num2 < 1 {
-			err := errors.New("Error: one ore both of given numbers are out of 1 ... 10")
+			err := errors.New("Error: one or both of given numbers are out of 1 ... 10")
 			fmt.Println(err)
 			os.Exit(0)
 		}
@@ -45,7 +45,7 @@ func main() {
 			int_num2 := roman_to_arabic(roman_num2)
 
 			if int_num1 > 10 || int_num1 < 1 || int_num2 > 10 || int_num2 < 1 {
-				err := errors.New("Error: one ore both of given numbers are out of 1 ... 10")
+				err := errors.New("Error: one or both of given numbers are out of 1 ... 10")
 				fmt.Println(err)
 				os.Exit(0)
 			}
