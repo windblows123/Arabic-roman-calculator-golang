@@ -93,6 +93,11 @@ func roman_to_arabic(num string) int {
 			current_position += 1
 		}
 	}
+	if int_result == 0 {
+		err := errors.New("Error: incorrect input")
+		fmt.Println(err)
+		os.Exit(0)
+	}
 	return int_result
 }
 
